@@ -40,6 +40,10 @@
 paj7620 Gesture;
 
 void setup() {
+  cemSetup ();
+  alexSetup ();
+  tamSetup ();
+
     Serial.begin(9600);
     while(!Serial) {
         
