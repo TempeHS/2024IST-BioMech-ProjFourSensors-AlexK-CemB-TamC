@@ -28,7 +28,7 @@
 */
 
 #include "Gesture.h"
-
+#include <Keyboard.h>
 /*
     Notice: When you want to recognize the Forward/Backward gestures, your gestures' reaction time must less than GES_ENTRY_TIME(0.8s).
         You also can adjust the reaction time according to the actual circumstance.
@@ -43,6 +43,7 @@ void setup() {
   cemSetup ();
   alexSetup ();
   tamSetup ();
+  keyboardSetup ();
 
     Serial.begin(9600);
     while(!Serial) {
